@@ -1,2 +1,4 @@
-img/original/*
-img/processed/*
+img/*
+!img/original/*
+!img/processed/*
+!.gitkeep
