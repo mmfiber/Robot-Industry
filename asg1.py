@@ -55,9 +55,9 @@ def calcOtsuTh(img_gray):
 
 if __name__ == '__main__':
     # load image
-    imgobj = Image.open('./img/asg1.png')
+    imgobj = Image.open('./img/original/asg1.png')
 
-    # change the loaded image color from rgb to gray scale
+    # change the loaded image data from rgb to gray scale
     img_rgb = toMatrix(imgobj)
     img_gray = toGrayScale(img_rgb)
 
