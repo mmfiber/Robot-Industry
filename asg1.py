@@ -1,5 +1,5 @@
+import pathlib
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy import signal
 from PIL import Image
 
@@ -64,6 +64,7 @@ if __name__ == '__main__':
     # binalize gray scale data
     img_bin = Binarize(img_gray)
 
-    # show image
+    # show and save image
     imgobj = Image.fromarray(np.uint8(img_bin))
     imgobj.show()
+    imgobj.save(pathlib.Path('./img/processed/asg1_adaptive.png'))
